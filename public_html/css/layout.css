@@ -1,0 +1,132 @@
+/*reset das proprioedades do estilo da página*/
+* {
+    box-sizing: border-box;
+}
+
+/*padding determinar o espaçamento das bordas do site*/
+body{
+    font-family: serif;
+    padding: 10px;
+    background-color: #fafafa;
+    
+    
+}
+
+/*Estrutura do site*/
+
+.header{
+    font-family: Bree Serif;
+    padding: 30px;
+    text-align:  initial;
+    background-color: #fafafa;
+    
+    
+}
+
+.header h1{
+    font-size: 50px;
+    color: #fafafa;
+    
+}
+
+.header p{
+    font-family: Bree Serif;
+    text-align: initial;
+    color: #fafafa;
+    
+}
+.header h2{
+    color: #fafafa;
+    
+}
+
+.nav{
+    overflow: hidden;
+    background-color: #e65100;
+    color: #fafafa;
+}
+
+.nav a{
+    float: left;
+    display: block;
+    color: #eceff1;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    
+}
+
+.nav a:hover{
+    background-color: #fff;
+    color: #fafafa;
+    
+}
+    
+.nav .alinha-direita{
+    float: right;
+    
+}
+
+/*determinar as dimenções da coluna*/
+.leftCol{
+    float: left;
+    width: 75%;
+   
+}
+
+.fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/*determinar a coluna esquerda*/
+.rightCol{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+    color: #fafafa;
+    
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+@media screen and (max-width: 800px){
+    .leftCol, .rightCol {
+        width: 100%;
+        padding: 0;
+        
+        
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .nav a{
+        float: none;
+        width: 100%;
+        
+    }
+}
